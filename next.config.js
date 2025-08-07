@@ -6,7 +6,7 @@ const nextConfig = {
     unoptimized: true
   },
   // Always use the Portfolio prefix for GitHub Pages
-  assetPrefix: '/Portfolio',
+  assetPrefix: '/Portfolio/',
   basePath: '/Portfolio',
   distDir: 'out'
 }
