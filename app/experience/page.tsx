@@ -196,7 +196,7 @@ const Experience = () => {
           preload="false"
           className="w-full h-full object-cover opacity-30"
         >
-          <source src="/videos/skills-bg.webm" type="video/webm" />
+          <source src="/Portfolio/videos/skills-bg.webm" type="video/webm" />
         </video>
       </div>
     </div>

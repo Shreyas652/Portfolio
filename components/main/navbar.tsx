@@ -18,13 +18,17 @@ export const Navbar = () => {
           href="#about-me"
           className="flex items-center"
         >
-          <Image
-            src="/logo.png"
+                    <img
             alt="Logo"
+            draggable={false}
+            loading="lazy"
             width={70}
             height={70}
-            draggable={false}
+            decoding="async"
+            data-nimg="1"
             className="cursor-pointer"
+            style={{color: "transparent"}}
+            src="/Portfolio/logo.png"
           />
           <div className="hidden md:flex md:selffont-bold ml-[10px] text-gray-300">Shreyas Gosavi</div>
         </Link>

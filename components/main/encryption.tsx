@@ -23,19 +23,19 @@ export const Encryption = () => {
 
       <div className="flex flex-col items-center justify-center translate-y-[-50px] absolute z-[20] w-auto h-auto">
         <div className="flex flex-col items-center group cursor-pointer w-auto h-auto">
-          <Image
-            src="/lock-top.png"
+                    <Image
+            src="/Portfolio/lock-top.png"
             alt="Lock top"
             width={50}
             height={50}
             className="translate-y-5 transition-all duration-200 group-hover:translate-y-11"
           />
           <Image
-            src="/lock-main.png"
-            alt="Lock main"
+            src="/Portfolio/lock-main.png"
+            alt="Lock Main"
             width={70}
             height={70}
-            className="z-10"
+            className="-translate-y-5 transition-all duration-200 group-hover:translate-y-12"
           />
         </div>
 
@@ -59,7 +59,7 @@ export const Encryption = () => {
           preload="false"
           className="w-full h-auto"
         >
-          <source src="/videos/encryption-bg.webm" type="video/webm" />
+          <source src="/Portfolio/videos/encryption-bg.webm" type="video/webm" />
         </video>
       </div>
     </div>
