@@ -144,15 +144,22 @@ shreyas-portfolio/
 
 5. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## :camera: Screenshots:
+## 📷 Portfolio Screenshots
 
-![Space Theme Hero Section](/.github/images/img1.png "Modern Space Theme Hero Section")
+### 🏠 Hero Section
+![Hero Section](/.github/images/img1.png "Portfolio Hero Section with 3D Animation")
 
-![Skills Showcase](/.github/images/img2.png "Interactive Skills Display")
+The hero section features my professional introduction with an animated 3D model and dynamic background effects.
 
-![Project Portfolio](/.github/images/img3.png "Project Showcase with Video Backgrounds")
+### 💼 Work Experience
+![Work Experience](/.github/images/img2.png "Professional Experience Timeline")
 
-![Contact Section](/.github/images/img4.png "Professional Contact Section")
+Interactive timeline showcasing my professional journey in software engineering and machine learning development.
+
+### 🚀 Skills & Technologies
+![Skills Section](/.github/images/img3.png "Technical Skills and Technology Stack")
+
+Comprehensive display of my technical skills with animated icons and proficiency indicators.
 
 ## :gear: Tech Stack
 
