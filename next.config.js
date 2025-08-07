@@ -5,8 +5,9 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/Portfolio' : '',
-  basePath: process.env.NODE_ENV === 'production' ? '/Portfolio' : '',
+  // Always use the Portfolio prefix for GitHub Pages
+  assetPrefix: '/Portfolio',
+  basePath: '/Portfolio',
   distDir: 'out',
   // Add this to help with static assets
   experimental: {
