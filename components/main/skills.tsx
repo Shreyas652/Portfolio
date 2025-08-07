@@ -159,16 +159,13 @@ export const Skills = () => {
       {/* Background Video */}
       <div className="w-full h-full absolute">
         <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover">
-          <video
-            className="w-full h-auto"
-            preload="false"
-            playsInline
-            loop
-            muted
-            autoPlay
-          >
-            <source src="/Portfolio/videos/skills-bg.webm" type="video/webm" />
-          </video>
+          <div 
+            className="w-full h-auto bg-gradient-to-br from-purple-900/30 to-blue-900/30"
+            style={{
+              backgroundImage: 'radial-gradient(circle at center, rgba(147, 51, 234, 0.2) 0%, rgba(59, 130, 246, 0.2) 100%)',
+              minHeight: '100%'
+            }}
+          />
         </div>
       </div>
     </section>

@@ -51,16 +51,12 @@ export const Encryption = () => {
       </div>
 
       <div className="w-full flex items-start justify-center absolute">
-        <video
-          loop
-          muted
-          autoPlay
-          playsInline
-          preload="false"
-          className="w-full h-auto"
-        >
-          <source src="/Portfolio/videos/encryption-bg.webm" type="video/webm" />
-        </video>
+        <div 
+          className="w-full h-screen bg-gradient-to-br from-green-900/20 to-purple-900/20"
+          style={{
+            backgroundImage: 'radial-gradient(circle at center, rgba(34, 197, 94, 0.1) 0%, rgba(147, 51, 234, 0.1) 100%)'
+          }}
+        />
       </div>
     </div>
   );
