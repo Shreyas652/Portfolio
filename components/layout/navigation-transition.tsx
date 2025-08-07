@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useRouter, usePathname } from "next/navigation";
-import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface NavigationLinkProps {
   href: string;
@@ -11,44 +11,20 @@ interface NavigationLinkProps {
 }
 
 export const NavigationLink = ({ href, children, className = "" }: NavigationLinkProps) => {
-  const router = useRouter();
   const pathname = usePathname();
-  const [isTransitioning, setIsTransitioning] = useState(false);
-
-  const handleClick = async (e: React.MouseEvent) => {
-    e.preventDefault();
-    
-    if (pathname === href || isTransitioning) return;
-
-    setIsTransitioning(true);
-
-    // Add a small delay for smooth transition feel
-    await new Promise(resolve => setTimeout(resolve, 100));
-    
-    router.push(href);
-    
-    // Reset transitioning state after navigation
-    setTimeout(() => setIsTransitioning(false), 500);
-  };
+  const isActive = pathname === href;
 
   return (
-    <motion.a
-      href={href}
-      onClick={handleClick}
-      className={`${className} ${isTransitioning ? 'pointer-events-none' : ''}`}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      transition={{ duration: 0.2 }}
-    >
+    <Link href={href} className={className}>
       <motion.span
-        animate={{
-          opacity: isTransitioning ? 0.6 : 1,
-        }}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
         transition={{ duration: 0.2 }}
+        className={`block ${isActive ? 'text-purple-400' : ''}`}
       >
         {children}
       </motion.span>
-    </motion.a>
+    </Link>
   );
 };
 
