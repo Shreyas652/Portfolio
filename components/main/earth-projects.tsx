@@ -7,13 +7,13 @@ import { PROJECTS } from "@/constants";
 
 // Define video mapping for each project
 const PROJECT_VIDEOS = [
-  { name: "Astronaut", src: "./videos/Ashtronut.webm", type: "video/webm" },    // Project 1: AI Financial Coach
-  { name: "Sun", src: "./videos/Sun.webm", type: "video/webm" },               // Project 2: Multi-Agent QA System
-  { name: "Earth", src: "./videos/earth.webm", type: "video/webm" },           // Project 3: RockyBot
-  { name: "Moon", src: "./videos/Moon.webm", type: "video/webm" },             // Project 4: Power BI Dashboard
-  { name: "Mars", src: "./videos/Mars.webm", type: "video/webm" },             // Project 5: Darshan
-  { name: "Blue Star", src: "./videos/Blue Star.webm", type: "video/webm" },   // Project 6: Enterprise Data Lake
-  { name: "Star", src: "./videos/Star.webm", type: "video/webm" },             // Project 7: Real-Time Analytics
+  { name: "Astronaut", src: "/videos/Ashtronut.webm", type: "video/webm" },    // Project 1: AI Financial Coach
+  { name: "Sun", src: "/videos/Sun.webm", type: "video/webm" },               // Project 2: Multi-Agent QA System
+  { name: "Earth", src: "/videos/earth.webm", type: "video/webm" },           // Project 3: RockyBot
+  { name: "Moon", src: "/videos/Moon.webm", type: "video/webm" },             // Project 4: Power BI Dashboard
+  { name: "Mars", src: "/videos/Mars.webm", type: "video/webm" },             // Project 5: Darshan
+  { name: "Blue Star", src: "/videos/Blue Star.webm", type: "video/webm" },   // Project 6: Enterprise Data Lake
+  { name: "Star", src: "/videos/Star.webm", type: "video/webm" },             // Project 7: Real-Time Analytics
 ];
 
 export const EarthProjects = () => {
@@ -175,7 +175,7 @@ export const EarthProjects = () => {
               onPlay={() => console.log(`▶️ ${video.name} video playing`)}
             >
               <source src={video.src} type={video.type} />
-              <source src="./videos/earth.webm" type="video/webm" />
+              <source src="/videos/earth.webm" type="video/webm" />
             </video>
           </motion.div>
         ))}

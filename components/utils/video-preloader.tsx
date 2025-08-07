@@ -4,13 +4,13 @@ import { useEffect } from "react";
 
 // Video sources for preloading
 const PROJECT_VIDEOS = [
-  "./videos/Ashtronut.webm",    // Most important - first project
-  "./videos/Sun.webm",
-  "./videos/earth.webm",
-  "./videos/Moon.webm",
-  "./videos/Mars.webm",
-  "./videos/Blue Star.webm",
-  "./videos/Star.webm",
+  "/videos/Ashtronut.webm",    // Most important - first project
+  "/videos/Sun.webm",
+  "/videos/earth.webm",
+  "/videos/Moon.webm",
+  "/videos/Mars.webm",
+  "/videos/Blue Star.webm",
+  "/videos/Star.webm",
 ];
 
 export const VideoPreloader = () => {

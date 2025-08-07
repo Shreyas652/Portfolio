@@ -256,35 +256,35 @@ export const PROJECTS = [
     title: "AI Financial Coach - Intelligent Personal Finance Platform",
     description:
       "AI-powered personal finance platform leveraging Google Gemini AI and advanced machine learning algorithms to deliver intelligent budget optimization, debt reduction strategies, and investment recommendations through an immersive 3D interface. Features automated expense analysis, conversational AI assistant, portfolio tracking, and CSV transaction processing. Built with FastAPI backend and React 18 frontend, achieving 95+ Lighthouse scores with enterprise-grade security.",
-    image: "./projects/Image 1.jpg",
+    image: "/projects/Image 1.jpg",
     link: "https://github.com/ShreyasGosavi404/ai-financial-coach",
   },
   {
     title: "Multi-Agent QA System with NLP & Deep Learning",
     description:
       "Built an intelligent multi-agent question-answering system using transformer models, BERT embeddings, and distributed agent architecture. Features collaborative AI agents with reinforcement learning that work together to provide comprehensive answers from multiple knowledge sources. Implements advanced NLP techniques including semantic similarity, named entity recognition, and real-time QA processing with 94% accuracy.",
-    image: "./projects/Image 4.jpg",
+    image: "/projects/Image 4.jpg",
     link: "https://github.com/ShreyasGosavi404/multi-agent-qa-system",
   },
   {
     title: "RockyBot: GenAI News Research Assistant with LLMs",
     description:
       "End-to-end GenAI application for automated financial news analysis using Large Language Models (LLMs), RAG architecture, and vector databases. Empowers analysts to extract meaningful insights from multiple news articles with intelligent Q&A capabilities, sentiment analysis models, and semantic search for financial insights extraction. Implements GPT-4 integration with custom fine-tuned models for domain-specific accuracy.",
-    image: "./projects/Image 5.jpg",
+    image: "/projects/Image 5.jpg",
     link: "https://github.com/ShreyasGosavi404/GenAI",
   },
   {
     title: "Power BI Advanced Analytics Dashboard with ML Integration",
     description:
       "Comprehensive Power BI dashboard with integrated machine learning models for loan performance analysis, borrower risk assessment using predictive algorithms, and financial capacity insights. Features custom R/Python scripts for advanced statistical modeling, automated risk scoring with ensemble methods, and interactive visualizations with real-time ML predictions for informed lending decisions.",
-    image: "./projects/Image 7.jpg",
+    image: "/projects/Image 7.jpg",
     link: "https://app.powerbi.com/groups/me/reports/9ae51eeb-721c-4d3a-84f1-1b31d7831684/501ee36e3a99680ca1be?experience=power-bi",
   },
   {
     title: "Darshan: AI-Powered Virtual Assistant for Visually Impaired",
     description:
       "Revolutionary AI-powered virtual assistant leveraging computer vision, deep learning object detection models, and natural language processing to create an intelligent 'artificial eye' system for visually impaired users. Features real-time object recognition using YOLO/CNN models, spatial audio feedback, voice-controlled navigation, and accessibility-focused UI. Integrates speech recognition, text-to-speech synthesis, and smart home automation for comprehensive assistive technology solution.",
-    image: "./projects/Image 2.jpg",
+    image: "/projects/Image 2.jpg",
     link: "",
   },
   {
@@ -298,7 +298,7 @@ export const PROJECTS = [
     title: "Real-Time ML Streaming Analytics Pipeline",
     description:
       "Built scalable real-time data streaming solution with Apache Kafka, Spark Streaming, MLflow, and Redis, processing millions of events per second with integrated machine learning models for real-time fraud detection and anomaly detection. Features automated model deployment, A/B testing frameworks, and MLOps pipelines. Handles 1M+ events/sec with sub-100ms latency for live ML inference and alerting systems.",
-    image: "./projects/Image 6.jpg",
+    image: "/projects/Image 6.jpg",
     link: "https://github.com/ShreyasGosavi404/real-time-analytics",
   },
 ] as const;
@@ -330,7 +330,7 @@ export const FOOTER_DATA = [
       {
         name: "Resume/CV",
         icon: null,
-        link: "./Shreyas_G_Resume SE.pdf",
+        link: "/Shreyas_G_Resume SE.pdf",
       },
     ],
   },
