@@ -24,14 +24,14 @@ export const Encryption = () => {
       <div className="flex flex-col items-center justify-center translate-y-[-50px] absolute z-[20] w-auto h-auto">
         <div className="flex flex-col items-center group cursor-pointer w-auto h-auto">
                     <Image
-            src="/Portfolio/lock-top.png"
+            src="/lock-top.png"
             alt="Lock top"
             width={50}
             height={50}
             className="translate-y-5 transition-all duration-200 group-hover:translate-y-11"
           />
           <Image
-            src="/Portfolio/lock-main.png"
+            src="/lock-main.png"
             alt="Lock Main"
             width={70}
             height={70}
@@ -51,12 +51,16 @@ export const Encryption = () => {
       </div>
 
       <div className="w-full flex items-start justify-center absolute">
-        <div 
-          className="w-full h-screen bg-gradient-to-br from-green-900/20 to-purple-900/20"
-          style={{
-            backgroundImage: 'radial-gradient(circle at center, rgba(34, 197, 94, 0.1) 0%, rgba(147, 51, 234, 0.1) 100%)'
-          }}
-        />
+        <video
+          loop
+          muted
+          autoPlay
+          playsInline
+          preload="false"
+          className="w-full h-auto"
+        >
+                    <source src="/videos/encryption-bg.webm" type="video/webm" />
+        </video>
       </div>
     </div>
   );

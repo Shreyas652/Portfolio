@@ -175,7 +175,7 @@ export const EarthProjects = () => {
               onPlay={() => console.log(`▶️ ${video.name} video playing`)}
             >
               <source src={video.src} type={video.type} />
-              <source src="/Portfolio/videos/earth.webm" type="video/webm" />
+              <source src="/videos/earth.webm" type="video/webm" />
             </video>
           </motion.div>
         ))}

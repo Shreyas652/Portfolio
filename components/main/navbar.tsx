@@ -28,7 +28,7 @@ export const Navbar = () => {
             data-nimg="1"
             className="cursor-pointer"
             style={{color: "transparent"}}
-            src="/Portfolio/logo.png"
+            src="/logo.png"
           />
           <div className="hidden md:flex md:selffont-bold ml-[10px] text-gray-300">Shreyas Gosavi</div>
         </Link>
