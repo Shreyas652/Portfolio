@@ -284,8 +284,8 @@ export const PROJECTS = [
     title: "Darshan: AI-Powered Virtual Assistant for Visually Impaired",
     description:
       "Revolutionary AI-powered virtual assistant leveraging computer vision, deep learning object detection models, and natural language processing to create an intelligent 'artificial eye' system for visually impaired users. Features real-time object recognition using YOLO/CNN models, spatial audio feedback, voice-controlled navigation, and accessibility-focused UI. Integrates speech recognition, text-to-speech synthesis, and smart home automation for comprehensive assistive technology solution.",
-    image: "/projects/Image 2.jpg",
-    link: "",
+    image: "/projects/image 2.jpg",
+    link: "https://github.com/ShreyasGosavi404/darshan-ai-assistant",
   },
   {
     title: "Enterprise Data Lake & Analytics Platform",
