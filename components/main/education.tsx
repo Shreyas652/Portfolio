@@ -14,7 +14,7 @@ export const Education = () => {
         {/* Education Title */}
         <motion.div
           variants={slideInFromTop}
-          className="text-[40px] font-medium text-center text-gray-200 mb-8"
+          className="text-[32px] font-medium text-center text-gray-200 mb-8"
         >
           Academic{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
