@@ -8,11 +8,7 @@ const nextConfig = {
   // Always use the Portfolio prefix for GitHub Pages
   assetPrefix: '/Portfolio',
   basePath: '/Portfolio',
-  distDir: 'out',
-  // Add this to help with static assets
-  experimental: {
-    staticPageGenerationTimeout: 1000,
-  }
+  distDir: 'out'
 }
 
 module.exports = nextConfig
