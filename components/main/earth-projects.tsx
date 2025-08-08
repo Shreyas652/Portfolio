@@ -134,7 +134,7 @@ export const EarthProjects = () => {
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
       {/* Preloaded Video Backgrounds - All videos loaded but only current one visible */}
-      <div className="fixed inset-0 w-full h-full -z-10">
+      <div className="fixed inset-0 w-screen h-screen -z-10">
         {PROJECT_VIDEOS.map((video, index) => (
           <motion.div
             key={`video-container-${index}`}
@@ -153,7 +153,7 @@ export const EarthProjects = () => {
               muted
               playsInline
               preload="auto"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover min-w-full min-h-full"
               style={{ 
                 display: index === currentProjectIndex ? 'block' : 'none'
               }}
@@ -181,8 +181,8 @@ export const EarthProjects = () => {
         ))}
         
         {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/60" />
+        <div className="absolute inset-0 bg-black/40 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/60 z-10" />
       </div>
 
       {/* Main Content */}
