@@ -16,6 +16,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const viewport: Viewport = {
   themeColor: "#030014",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  viewportFit: "cover",
 };
 
 export const metadata: Metadata = siteConfig;
@@ -25,17 +30,21 @@ export default function RootLayout({ children }: PropsWithChildren) {
     <html lang="en">
       <body
         className={cn(
-          "bg-[#030014] overflow-y-scroll overflow-x-hidden",
+          "bg-[#030014] overflow-y-scroll overflow-x-hidden min-h-screen w-full",
           inter.className
         )}
       >
         <SmartVideoPreloader />
         <StarsCanvas />
-        <Navbar />
-        <PageTransition>
-          {children}
-        </PageTransition>
-        <Footer />
+        <div className="relative w-full min-h-screen flex flex-col">
+          <Navbar />
+          <main className="flex-1 w-full max-w-[1920px] mx-auto">
+            <PageTransition>
+              {children}
+            </PageTransition>
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

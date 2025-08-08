@@ -25,12 +25,13 @@ export const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-20"
+      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-20 container-constraint"
     >
-      <SkillText />
+      <div className="responsive-container w-full">
+        <SkillText />
 
-      {/* Atomic Skills Layout - Technologies Orbiting Python Like Electrons */}
-      <div className="relative flex items-center justify-center min-h-[800px] w-full max-w-6xl mx-auto">
+        {/* Atomic Skills Layout - Technologies Orbiting Python Like Electrons */}
+        <div className="relative flex items-center justify-center min-h-[800px] w-full max-w-6xl mx-auto">
         
         {/* Orbital ring visuals with gradually increasing spacing */}
         <div className="absolute inset-0 flex items-center justify-center">
@@ -154,6 +155,7 @@ export const Skills = () => {
             })}
           </div>
         </div>
+      </div>
       </div>
 
       {/* Background Video */}
