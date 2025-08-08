@@ -3,20 +3,43 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { slideInFromLeft, slideInFromRight } from "@/lib/motion";
+import useWindowSize from "@/hooks/useWindowSize";
 
 export const About = () => {
+  const { width } = useWindowSize();
+  
+  // Calculate responsive font sizes based on actual window width
+  const getFontSize = (baseSize: number) => {
+    if (!width) return baseSize;
+    
+    // Scale down fonts for larger viewports to prevent zoomed appearance
+    if (width > 1920) return baseSize * 0.8;
+    if (width > 1440) return baseSize * 0.9;
+    if (width > 1024) return baseSize;
+    if (width > 768) return baseSize * 1.1;
+    return baseSize * 1.2;
+  };
+
   return (
     <section
       id="about-me"
-      className="flex flex-col items-center justify-center py-20 px-4 relative z-[20] container-constraint"
+      className="flex flex-col items-center justify-center py-20 px-4 relative z-[20]"
+      style={{ 
+        maxWidth: width ? Math.min(width, 1920) : '100%',
+        margin: '0 auto',
+        transform: 'translateX(0)' // Prevent any shifting
+      }}
     >
-      <div className="w-full max-w-4xl mx-auto responsive-container">
+      <div className="w-full max-w-4xl mx-auto px-4">
         {/* About Me Title */}
         <motion.div
           variants={slideInFromLeft(0.5)}
           className="text-center mb-8"
         >
-          <h1 className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-8" style={{ fontSize: '2rem' }}>
+          <h1 
+            className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-8"
+            style={{ fontSize: `${getFontSize(32)}px` }}
+          >
             About{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               Me
@@ -56,10 +79,16 @@ export const About = () => {
           variants={slideInFromLeft(0.8)}
           className="text-center mb-8"
         >
-          <h2 className="font-bold text-white mb-4" style={{ fontSize: '2.25rem' }}>
+          <h2 
+            className="font-bold text-white mb-4"
+            style={{ fontSize: `${getFontSize(36)}px` }}
+          >
             Shreyas Gosavi
           </h2>
-          <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-6" style={{ fontSize: '1.5rem' }}>
+          <h3 
+            className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-6"
+            style={{ fontSize: `${getFontSize(24)}px` }}
+          >
             Full Stack Developer & Machine Learning Engineer
           </h3>
         </motion.div>
@@ -69,7 +98,10 @@ export const About = () => {
           variants={slideInFromLeft(1.0)}
           className="max-w-4xl mx-auto text-center"
         >
-          <div className="space-y-6 text-gray-300 leading-relaxed" style={{ fontSize: '1.125rem' }}>
+          <div 
+            className="space-y-6 text-gray-300 leading-relaxed"
+            style={{ fontSize: `${getFontSize(18)}px` }}
+          >
             <p>
               Versatile Full Stack Developer with 3+ years of comprehensive experience in building 
               end-to-end web applications and intelligent data-driven solutions. Proficient in modern 

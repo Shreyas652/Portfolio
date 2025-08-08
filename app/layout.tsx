@@ -38,7 +38,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
         <StarsCanvas />
         <div className="relative w-full min-h-screen flex flex-col">
           <Navbar />
-          <main className="flex-1 w-full max-w-[1920px] mx-auto">
+          <main className="flex-1 w-full">
             <PageTransition>
               {children}
             </PageTransition>
