@@ -1,15 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { slideInFromLeft, slideInFromRight } from "@/lib/motion";
 
 export const About = () => {
   return (
     <section
       id="about-me"
-      className="flex flex-col items-center justify-center py-20 px-4 relative z-[20]"
+      className="flex flex-col items-center justify-center py-20 px-4 relative z-[20] container-constraint"
     >
-      <div className="w-full max-w-4xl mx-auto">
+      <div className="w-full max-w-4xl mx-auto responsive-container">
         {/* About Me Title */}
         <motion.div
           variants={slideInFromLeft(0.5)}
@@ -28,7 +29,25 @@ export const About = () => {
           variants={slideInFromRight(0.8)}
           className="flex justify-center mb-8"
         >
-          <div className="text-8xl">👨‍💻</div>
+          <div className="relative group">
+            {/* Glowing border effect */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 via-cyan-500 to-purple-500 rounded-full blur-sm opacity-75 group-hover:opacity-100 transition duration-300 group-hover:animate-pulse"></div>
+            
+            {/* Profile image container */}
+            <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
+              <Image
+                src="/MYProfile.jpg"
+                alt="Shreyas Gosavi - Full Stack Developer"
+                width={192}
+                height={192}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                priority
+              />
+              
+              {/* Overlay gradient for better visual appeal */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+            </div>
+          </div>
         </motion.div>
 
         {/* Name and Title */}
