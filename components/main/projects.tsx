@@ -8,7 +8,7 @@ export const Projects = () => {
       className="flex flex-col items-center justify-center py-20 container-constraint"
     >
       <div className="responsive-container w-full">
-        <h1 className="text-[32px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-16 text-center">
+        <h1 className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-16 text-center" style={{ fontSize: '2rem' }}>
           My Projects
         </h1>
         

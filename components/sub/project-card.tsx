@@ -30,7 +30,7 @@ export const ProjectCard = ({
       </div>
 
       <div className="relative p-4 bg-gradient-to-t from-black/80 to-transparent">
-        <h1 className="text-sm font-semibold text-white truncate">{title}</h1>
+        <h1 className="text-sm font-semibold text-white truncate leading-tight" style={{ fontSize: '0.875rem' }}>{title}</h1>
       </div>
     </Link>
   );
