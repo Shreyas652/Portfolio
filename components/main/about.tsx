@@ -42,6 +42,7 @@ export const About = () => {
                 height={256}
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 priority
+                unoptimized
               />
               
               {/* Overlay gradient for better visual appeal */}
