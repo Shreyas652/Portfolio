@@ -16,7 +16,7 @@ export const About = () => {
           variants={slideInFromLeft(0.5)}
           className="text-center mb-8"
         >
-          <h1 className="text-[32px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-8">
+          <h1 className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-8" style={{ fontSize: '2rem' }}>
             About{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               Me
@@ -56,10 +56,10 @@ export const About = () => {
           variants={slideInFromLeft(0.8)}
           className="text-center mb-8"
         >
-          <h2 className="text-4xl font-bold text-white mb-4">
+          <h2 className="font-bold text-white mb-4" style={{ fontSize: '2.25rem' }}>
             Shreyas Gosavi
           </h2>
-          <h3 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-6">
+          <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-6" style={{ fontSize: '1.5rem' }}>
             Full Stack Developer & Machine Learning Engineer
           </h3>
         </motion.div>
@@ -69,7 +69,7 @@ export const About = () => {
           variants={slideInFromLeft(1.0)}
           className="max-w-4xl mx-auto text-center"
         >
-          <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
+          <div className="space-y-6 text-gray-300 leading-relaxed" style={{ fontSize: '1.125rem' }}>
             <p>
               Versatile Full Stack Developer with 3+ years of comprehensive experience in building 
               end-to-end web applications and intelligent data-driven solutions. Proficient in modern 
