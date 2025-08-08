@@ -14,7 +14,7 @@ export const About = () => {
         {/* About Me Title */}
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="text-center mb-16"
+          className="text-center mb-8"
         >
           <h1 className="text-[32px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-8">
             About{" "}
@@ -34,12 +34,12 @@ export const About = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 via-cyan-500 to-purple-500 rounded-full blur-sm opacity-75 group-hover:opacity-100 transition duration-300 group-hover:animate-pulse"></div>
             
             {/* Profile image container */}
-            <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
+            <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
               <Image
                 src="/MYProfile.jpg"
                 alt="Shreyas Gosavi - Full Stack Developer"
-                width={192}
-                height={192}
+                width={256}
+                height={256}
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 priority
               />
