@@ -91,12 +91,12 @@ export const SOCIALS = [
   {
     name: "GitHub",
     icon: RxGithubLogo,
-    link: "https://github.com/ShreyasGosavi404",
+    link: "https://github.com/Shreyas652",
   },
   {
     name: "LinkedIn",
     icon: RxLinkedinLogo,
-    link: "https://www.linkedin.com/in/shreyasavadhootgosavi/",
+    link: "https://www.linkedin.com/in/Shreyas652/",
   },
 ] as const;
 
@@ -310,7 +310,7 @@ export const FOOTER_DATA = [
       {
         name: "GitHub",
         icon: RxGithubLogo,
-        link: "https://github.com/ShreyasGosavi404",
+        link: "https://github.com/Shreyas652",
       },
     ],
   },
@@ -320,7 +320,7 @@ export const FOOTER_DATA = [
       {
         name: "Linkedin",
         icon: RxLinkedinLogo,
-        link: "https://www.linkedin.com/in/shreyasavadhootgosavi/",
+        link: "https://www.linkedin.com/in/Shreyas652/",
       },
     ],
   },
