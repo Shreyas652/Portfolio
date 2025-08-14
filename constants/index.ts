@@ -91,7 +91,7 @@ export const SOCIALS = [
   {
     name: "GitHub",
     icon: RxGithubLogo,
-    link: "https://github.com/Shreyas652",
+    link: "https://github.com/Shreyas652/",
   },
   {
     name: "LinkedIn",
@@ -310,7 +310,7 @@ export const FOOTER_DATA = [
       {
         name: "GitHub",
         icon: RxGithubLogo,
-        link: "https://github.com/Shreyas652",
+        link: "https://github.com/Shreyas652/",
       },
     ],
   },
